@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lift</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="floors" id="floor2">
+        <p>Level 2</p>
+        <div class="box">
+          <img
+            class="btn"
+            src="./down.svg"
+            alt="Down Arrow"
+            onclick="requestDirection(0, 'down')"
+          />
+        </div>
+      </div>
+      <div class="floors" id="floor1">
+        <p>Level 1</p>
+        <div class="box">
+          <img
+            class="btn"
+            id="btn-up"
+            src="./up.svg"
+            alt="Up Arrow"
+            onclick="middleFloor('up', this)"
+          />
+          <img
+            class="btn"
+            id="btn-down"
+            src="./down.svg"
+            alt="Down Arrow"
+            onclick="middleFloor('down', this)"
+          />
+        </div>
+      </div>
+      <div class="floors" id="floor0">
+        <p>Ground Level</p>
+        <div class="box">
+          <img
+            class="btn"
+            src="./up.svg"
+            alt="Up Arrow"
+            onclick="requestDirection(2, 'up')"
+          />
+        </div>
+      </div>
+      <div class="lift" id="lift">
+        <p>Elevator</p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

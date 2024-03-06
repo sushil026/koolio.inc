@@ -1,0 +1,79 @@
+body {
+  background: #4c4c5e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.container {
+  height: 90vh;
+  min-width: 256px;
+  background: gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1px;
+  position: relative;
+}
+.floors {
+  height: 33.33%;
+  width: 100%;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  position: relative;
+}
+.floors p {
+  top: 0;
+  position: absolute;
+  height: fit-content;
+  margin: 0;
+  padding: 3px 15px;
+  background: wheat;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  z-index: 999;
+}
+.lift {
+  height: 27vh;
+  width: 90%;
+  background: linear-gradient(
+    rgb(177, 103, 103),
+    rgb(162, 124, 124),
+    rgb(87, 64, 64)
+  );
+  border: 2px solid black;
+  position: absolute;
+  bottom: 1%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lift p {
+  position: absolute;
+  background: wheat;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 3px 15px;
+}
+.box {
+  height: fit-content;
+  width: 2.5rem;
+  position: absolute;
+  left: -4rem;
+}
+.btn {
+  border: 2px solid black;
+  background: white;
+}
+.btn:hover {
+  background: yellow;
+}
+.active {
+  background: green;
+}
